@@ -7623,8 +7623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   water: {fileID: 1066652763}
   underwaterFilter: {fileID: 285586942}
-  healthMeter: {fileID: 1970181325}
-  oxygenMeter: {fileID: 1824740655}
+  healthMeter: {fileID: 1970181326}
+  oxygenMeter: {fileID: 1824740656}
   health: 0
   oxygen: 0
 --- !u!1 &1258108991
