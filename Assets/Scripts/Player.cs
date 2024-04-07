@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public AudioSource src,src2;
+    public AudioClip sfx1,sfx2;
     public RisingWater water;
     public GameObject underwaterFilter;
 
@@ -14,20 +16,32 @@ public class Player : MonoBehaviour
     float oxygen = 1f; // Now in percentage (0 to 1)
 
     private const float MaxMeterWidth = 800f; // Max length of the meter
+    private bool UnderWaterSound = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        src.clip = sfx1;
+        src.loop = true;
+        src.Play();
         underwaterFilter.SetActive(false);
     }
 
     // FixedUpdate is used for consistent updates
     void FixedUpdate()
     {
+
         if (water.transform.position.y > gameObject.transform.position.y)
         {
             underwaterFilter.SetActive(true);
             DecreaseOxygen();
+            if (UnderWaterSound == false){
+                src.volume = 0.15f;
+                src2.clip = sfx2;
+                src2.loop = true;
+                src2.Play();
+                UnderWaterSound = true;
+            }
         }
         else
         {
