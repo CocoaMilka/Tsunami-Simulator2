@@ -10,6 +10,12 @@ public class RisingWater : MonoBehaviour
 
     bool isRising = true;
 
+    private void Start()
+    {
+        // Set starting height to match water's height
+        waterHeight = gameObject.transform.position.y;
+    }
+
     // Continually called at a fixed interval (infinite loop)
     void FixedUpdate()
     {
