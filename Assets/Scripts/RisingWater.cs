@@ -3,10 +3,10 @@ using UnityEngine;
 public class RisingWater : MonoBehaviour
 {
     // Water position
-    float waterHeight = -2.0f;
+    public float waterHeight = -2.0f;
 
     // How fast the water rises
-    float waterSpeed = 0.001f;
+    public float waterSpeed = 0.001f;
 
     bool isRising = true;
 
