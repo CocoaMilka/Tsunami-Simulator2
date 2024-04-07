@@ -137,7 +137,10 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 9ee469e2691fd08489c82ab75cc09ddf, type: 2}
+  - {fileID: 8526668784930440700, guid: 5981ecd6d03459a418c298dbe056c8fb, type: 2}
+  - {fileID: 11400000, guid: 99d3ab06aee7735468339a5bad0a4514, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -157,7 +160,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.TsunamiSimulator2
   buildNumber:
     Standalone: 0
     VisionOS: 0
