@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
     public RectTransform healthMeter;
     public RectTransform oxygenMeter;
 
-    public float health = 1f; // Now in percentage (0 to 1)
-    public float oxygen = 1f; // Now in percentage (0 to 1)
+    float health = 1f; // Now in percentage (0 to 1)
+    float oxygen = 1f; // Now in percentage (0 to 1)
 
     private const float MaxMeterWidth = 800f; // Max length of the meter
 
